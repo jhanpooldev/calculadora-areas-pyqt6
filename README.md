@@ -47,11 +47,14 @@ proyecto/
 
 ```bash
 pip install PyQt6
+```
 ##🔧 Edición de la UI
 Si deseas editar la UI desde .ui, necesitas Qt Designer y puedes convertirlo con:
 bashpyuic6 src/vista/main_window.ui -o src/vista/ui_main.py
+
 ##▶️ ¿Cómo ejecutar la aplicación?
 Desde la raíz del proyecto:
+```
 bashpython app.py
 ```
 ##👥 Integrante
