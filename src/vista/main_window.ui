@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>819</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>791</width>
+      <height>511</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="labelFigura">
+       <property name="text">
+        <string>Figura Seleccionada:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="labelFormula">
+       <property name="text">
+        <string>Formula:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="labelResultado">
+         <property name="text">
+          <string>Resultado: Area=</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelImagen">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>200</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Historial de Calculo:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QListWidget" name="listHistorial"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>819</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuCalculo_de_Areas">
+    <property name="title">
+     <string>Calculo de Areas</string>
+    </property>
+    <addaction name="actionCirculo"/>
+    <addaction name="actionTriangulo"/>
+    <addaction name="actionRectangulo"/>
+    <addaction name="actionCuadrado"/>
+    <addaction name="separator"/>
+    <addaction name="actionSalir"/>
+   </widget>
+   <addaction name="menuCalculo_de_Areas"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCirculo">
+   <property name="text">
+    <string>Circulo</string>
+   </property>
+  </action>
+  <action name="actionTriangulo">
+   <property name="text">
+    <string>Triangulo</string>
+   </property>
+  </action>
+  <action name="actionRectangulo">
+   <property name="text">
+    <string>Rectangulo</string>
+   </property>
+  </action>
+  <action name="actionCuadrado">
+   <property name="text">
+    <string>Cuadrado</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
